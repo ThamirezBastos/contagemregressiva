@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Add a dark overlay */
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body * {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 80px;
+  color: rgb(197, 14, 14);
+  margin-bottom: 10vh;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 6px;
+  
+}
+
+.countdown {
+  display: none;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-size: 50px;
+  margin-bottom:25%;
+  color:rgb(19, 14, 49);
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+.time small {
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    display: none;
+  }
+  .time {
+    margin: 5px;
+    padding: 2px;
+  }
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+  .time small {
+    font-size: 8px;
+  }
+  .countdown {
+    display: flex;
+    flex-direction: column;
+  }
+}
