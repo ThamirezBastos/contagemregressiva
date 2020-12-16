@@ -1,30 +1,4 @@
 
-// styled components
-
-// const oi = document.getElementById('oi');
-
-// const conteudoCSS = {
-//     content: 'sdiursduirhdioashriuh',
-//     zIndex: '999',
-//     color: 'red'
-// };
-
-// console.log(conteudoCSS);
-
-
-// function criaOi(informacao){
-//     oi.textContent = informacao.content;
-
-    
-//     const estiloOi = oi.style;
-//     estiloOi.zIndex = informacao.zIndex;
-//     estiloOi.color = informacao.color;
-    
-// }
-
-// criaOi(conteudoCSS);
-
-
 const secondsContainer = document.querySelector('#seconds')
 const minutesContainer = document.querySelector('#minutes')
 const hoursContainer = document.querySelector('#hours')
